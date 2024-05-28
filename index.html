@@ -7,6 +7,14 @@
     <title>Random Email generator</title>
   </head>
   <body>
+    <div id="app" v-cloack>
+      <h1>{{ title }}</h1>
+
+      <ul v-show="emails.length === 10">
+        <li v-for="(email, index) in emails">{{emails[index]}}</li>
+      </ul>
+    </div>
+
     <!--Axion-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!--VueJs CDN-->
